@@ -1,9 +1,7 @@
 <template>
   <div class="section" id="carousel">
     <div class="container">
-      <div class="title">
-        <h4>Carousel</h4>
-      </div>
+      <div class="title"></div>
       <div class="row justify-content-center">
         <div class="col-8">
           <el-carousel height="500px">
@@ -37,8 +35,8 @@ import { Carousel, CarouselItem } from 'element-ui';
 export default {
   components: {
     [Carousel.name]: Carousel,
-    [CarouselItem.name]: CarouselItem
-  }
+    [CarouselItem.name]: CarouselItem,
+  },
 };
 </script>
 <style></style>

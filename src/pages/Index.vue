@@ -1,16 +1,15 @@
 <template>
   <div>
-    <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header clear-filter">
       <parallax
         class="page-header-image"
-        style="background-image:url('img/header.jpg')"
-      >
+        style="background-image: url('img/BANNER.jpg')">
       </parallax>
       <div class="container">
         <div class="content-center brand">
           <img class="n-logo" src="img/now-logo.png" alt="" />
-          <h1 class="h1-seo">Now UI Kit.</h1>
-          <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+          <h1 class="h1-seo">Wescley Tomaz</h1>
+          <h3>O vereador da familia tradicional brasileira</h3>
         </div>
         <h6 class="category category-absolute">
           Designed by
@@ -20,8 +19,7 @@
           <a href="https://www.creative-tim.com" target="_blank">
             <img
               src="img/creative-tim-white-slim2.png"
-              class="creative-tim-logo"
-            /> </a
+              class="creative-tim-logo" /> </a
           >.
         </h6>
       </div>
@@ -105,8 +103,8 @@ export default {
     NucleoIconsSection,
     SignupForm,
     ExamplesSection,
-    DownloadSection
-  }
+    DownloadSection,
+  },
 };
 </script>
 <style></style>

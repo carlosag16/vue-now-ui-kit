@@ -2,24 +2,19 @@
   <navbar
     position="fixed"
     type="primary"
-    :transparent="transparent"
     :color-on-scroll="colorOnScroll"
-    menu-classes="ml-auto"
-  >
+    menu-classes="ml-auto">
     <template>
-      <router-link v-popover:popover1 class="navbar-brand" to="/">
-        Now Ui Kit
+      <router-link v-popover:popover1 to="/">
+        <img src="img/AGORA.png" alt="deputado do povo" style="height: 60px" />
       </router-link>
       <el-popover
         ref="popover1"
         popper-class="popover"
         placement="bottom"
         width="200"
-        trigger="hover"
-      >
-        <div class="popover-body">
-          Designed by Invision. Coded by Creative Tim
-        </div>
+        trigger="hover">
+        <div class="popover-body"></div>
       </el-popover>
     </template>
     <template slot="navbar-menu">
@@ -27,35 +22,31 @@
         <a
           class="nav-link"
           href="https://www.creative-tim.com/product/vue-now-ui-kit"
-          target="_blank"
-        >
+          target="_blank">
           <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-          <p>Download</p>
+          <p>Home</p>
         </a>
       </li>
       <drop-down
         tag="li"
-        title="Components"
+        title="O que faremos?"
         icon="now-ui-icons design_app"
-        class="nav-item"
-      >
+        class="nav-item">
         <nav-link to="/">
           <i class="now-ui-icons business_chart-pie-36"></i> All components
         </nav-link>
         <a
           href="https://demos.creative-tim.com/vue-now-ui-kit/documentation"
           target="_blank"
-          class="dropdown-item"
-        >
+          class="dropdown-item">
           <i class="now-ui-icons design_bullet-list-67"></i> Documentation
         </a>
       </drop-down>
       <drop-down
-              tag="li"
-              title="Examples"
-              icon="now-ui-icons design_image"
-              class="nav-item"
-      >
+        tag="li"
+        title="Como faremos"
+        icon="now-ui-icons design_image"
+        class="nav-item">
         <nav-link to="/landing">
           <i class="now-ui-icons education_paper"></i> Landing
         </nav-link>
@@ -70,10 +61,9 @@
         <a
           class="nav-link btn btn-neutral"
           href="https://www.creative-tim.com/product/vue-now-ui-kit-pro"
-          target="_blank"
-        >
+          target="_blank">
           <i class="now-ui-icons arrows-1_share-66"></i>
-          <p>Upgrade to PRO</p>
+          <p>Nossos projetos</p>
         </a>
       </li>
 
@@ -83,9 +73,8 @@
           rel="tooltip"
           title="Follow us on Twitter"
           data-placement="bottom"
-          href="https://twitter.com/CreativeTim"
-          target="_blank"
-        >
+          href=""
+          target="_blank">
           <i class="fab fa-twitter"></i>
           <p class="d-lg-none d-xl-none">Twitter</p>
         </a>
@@ -96,9 +85,8 @@
           rel="tooltip"
           title="Like us on Facebook"
           data-placement="bottom"
-          href="https://www.facebook.com/CreativeTim"
-          target="_blank"
-        >
+          href=""
+          target="_blank">
           <i class="fab fa-facebook-square"></i>
           <p class="d-lg-none d-xl-none">Facebook</p>
         </a>
@@ -110,8 +98,7 @@
           title="Follow us on Instagram"
           data-placement="bottom"
           href="https://www.instagram.com/CreativeTimOfficial"
-          target="_blank"
-        >
+          target="_blank">
           <i class="fab fa-instagram"></i>
           <p class="d-lg-none d-xl-none">Instagram</p>
         </a>
@@ -127,14 +114,14 @@ export default {
   name: 'main-navbar',
   props: {
     transparent: Boolean,
-    colorOnScroll: Number
+    colorOnScroll: Number,
   },
   components: {
     DropDown,
     Navbar,
     NavLink,
-    [Popover.name]: Popover
-  }
+    [Popover.name]: Popover,
+  },
 };
 </script>
 
